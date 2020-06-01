@@ -1,0 +1,24 @@
+
+{
+    "projects" : [
+                    {
+                        "id": 1,
+                        "projectName": "Knocky Test Case Collator",
+                        "description": "A validation test cases management system",
+                        "languages": ["Typescript", "C#", "HTML", "CSS"],
+                        "technologies": ["Angular 8", "ASP.net API Core","EntityFrameworkCore", "Microsoft SQL Server 2019"],
+                        "gitUrl": "",
+                        "imageUrl": ""
+                    },
+                    {
+                        "id": 2,
+                        "projectName": "Personal Blog",
+                        "description": "A website that show cases my personal projects",
+                        "languages": ["JavaScript", "HTML", "CSS"],
+                        "technologies": ["Nodejs", "Express","Mongoose", "EJS"],
+                        "gitUrl": "",
+                        "imageUrl": ""
+                    }
+            ]
+}
+
