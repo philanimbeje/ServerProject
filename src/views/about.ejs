@@ -5,13 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <base href="/"> 
     <link rel="stylesheet" type="text/css" href="/css/navStyle.css">
+    <link rel="stylesheet" type="text/css" href="/css/about.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
-    <script src="/scripts/about.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>About</title>
 </head>
 <body>
     <%- include('partials/navbar', {active: "About"}); %>
-    <button onclick="downloadCv()">Download CV</button>
-    
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <div class="container">
+        <p>
+            Hello, My name is Philani Mbeje. Based in Durban KZN, working as a System Software Engineer
+        </p>
+        <br>
+        <p>
+            As a systems developer, I have strong backend skills, specialising in C# dotNet and MSSqlServer.
+            I have experience in system feature implementation, system and database design as well as regular system engineering tasks
+            such as documentation and reporting.
+        </p>
+        <br>
+        <p>
+            I also have frontend skills, having worked with HTML, CSS and JavaScript as well as having worked with Angular.
+        </p>
+        <br>
+        <p>
+            Take a look at my completed <span><a href="./projects">projects</a></span> for a better understanding of what I can do.
+        </p>
+
+        <br>
+        <br>
+        <br>
+
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-linkedin"></a>
+
+        <br>
+        <br>
+        <br>
+
+        <p class="cvLink">
+            <span><a href=""></a>Click Here</a></span> to download my CV
+        </p>
+    </div>
 </body>
 </html>

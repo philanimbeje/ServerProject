@@ -35,6 +35,14 @@ app.get('/about', function (req, res) {
   res.render('about');
 });
 
+app.get('/projects', function (req, res) {
+  res.render('projects');
+});
+
+app.get('/contact', function (req, res) {
+  res.render('contact');
+});
+
 
 const projectRoutes = require('./src/routes/projectRoutes');
   app.use('/project', projectRoutes);
