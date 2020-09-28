@@ -1,0 +1,21 @@
+.topIndex {
+    background-image: url('/images/space.png');
+    text-align: center;
+}
+
+img {
+    width: 100vw;
+    height: auto;
+    max-width: none;
+    max-height: 100vh;
+    object-fit: contain;
+}
+
+button {
+    color: white;
+    padding: 12px 50px;
+    border: 2px solid white;
+    cursor: pointer;
+    background-color: Transparent;
+    outline: 2px;
+  }

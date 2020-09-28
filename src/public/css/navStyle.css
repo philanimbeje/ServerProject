@@ -68,6 +68,13 @@ nav{
     transition: 0.2s;
 }
 
+.btn2{
+    text-transform: uppercase;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 0.2s;
+}
+
 .btn:hover{
     color: var(--secondary-color);
     background: var(--primary-colour);
@@ -77,6 +84,16 @@ nav{
         0 0 160px var(--primary-colour), 
         0 0 320px var(--primary-colour);
     transition-delay: 0s;
+}
+
+.btn2:hover{
+    box-shadow: 
+        0 0 20px var(--primary-colour), 
+        0 0 80px var(--primary-colour),
+        0 0 160px var(--primary-colour), 
+        0 0 320px var(--primary-colour);
+    transition-delay: 0s;
+    border: 2px solid var(--secondary-color);
 }
 
 .btn span{
