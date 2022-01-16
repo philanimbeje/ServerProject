@@ -1,0 +1,40 @@
+[
+    {
+        "project":"Website",
+        "type":"software",
+        "tools":[
+            "Javascript",
+            "HTML",
+            "CSS",
+            "Node",
+            "EJS",
+            "ExpressJS"
+        ],
+        "deployment":{
+            "accessUrl":"www.philanimbeje.co.za",
+            "hostPlatform":"Heroku"
+        },
+        "projectUrl":"https://github.com/philanimbeje/ServerProject",
+        "description":"Personal website using ExpressJS and EJS (embedded Javascript)",
+        "imageUrl":""
+    },
+    {
+        "project":"Orange ToDo App",
+        "type":"software",
+        "tools":[
+            "HTML",
+            "CSS",
+            "EJS",
+            "ExpressJS",
+            "Javascript",
+            "Node"
+        ],
+        "deployment":{
+            "accessUrl":"https://orangetodoapp.herokuapp.com/",
+            "hostPlatform":"Heroku"
+        },
+        "projectUrl":"https://github.com/philanimbeje/simpleToDo",
+        "description":"A simple Todo application using browser localStorage for persistence",
+        "imageUrl":""
+    }
+]
