@@ -17,58 +17,22 @@
 <main>
 <div class="body">
     <div class="options">
-        <div class="option"  style='--optionBackground:url(https://www.teahub.io/photos/full/147-1473200_phone-wallpapers-tumblr-group-popular-cool-wallpaper-for.jpg);'>
+        <% if(data.length>0) {%>
+            <% data.forEach(project => { %>
+        <div class="option"  style='--optionBackground:url(<%= project.imageUrl %>);'>
             <div class="shadow">
                  <div class="label">
                      <div class="icon">
-                         <i class="fas fa-walking"></i>
+                         <i class="fas <%= project.symbol %>"></i>
                      </div>
                      <div class="info">
-                         <div class="main">Lorm</div>
-                         <div class="sub">Lorem ipsum dolor </div>
+                         <div class="main"><%= project.project %></div>
+                         <div class="sub"><%= project.description %></div>
                      </div>
                  </div>
             </div>
         </div>
-        <div class="option"  style='--optionBackground:url(https://www.teahub.io/photos/full/147-1473200_phone-wallpapers-tumblr-group-popular-cool-wallpaper-for.jpg);'>
-            <div class="shadow">
-                 <div class="label">
-                     <div class="icon">
-                         <i class="fas fa-tree"></i>
-                     </div>
-                     <div class="info">
-                         <div class="main">Lorm</div>
-                         <div class="sub">Lorem ipsum dolor </div>
-                     </div>
-                 </div>
-            </div>
-        </div>
-        <div class="option"  style='--optionBackground:url(https://www.teahub.io/photos/full/147-1473200_phone-wallpapers-tumblr-group-popular-cool-wallpaper-for.jpg);'>
-            <div class="shadow">
-                 <div class="label">
-                     <div class="icon">
-                         <i class="fas fa-snowflake"></i>
-                     </div>
-                     <div class="info">
-                         <div class="main">Lorm</div>
-                         <div class="sub">Lorem ipsum dolor </div>
-                     </div>
-                 </div>
-            </div>
-        </div>
-        <div class="option"  style='--optionBackground:url(https://www.teahub.io/photos/full/147-1473200_phone-wallpapers-tumblr-group-popular-cool-wallpaper-for.jpg);'>
-            <div class="shadow">
-                 <div class="label">
-                     <div class="icon">
-                         <i class="fas fa-tint"></i>
-                     </div>
-                     <div class="info">
-                         <div class="main">Lorm</div>
-                         <div class="sub">Lorem ipsum dolor </div>
-                     </div>
-                 </div>
-            </div>
-        </div>
+        <% })}%>
     </div>
 </div>
 </main>

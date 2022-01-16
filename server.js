@@ -36,7 +36,29 @@ app.get('/about', function (req, res) {
 });
 
 app.get('/projects', function (req, res) {
-  res.render('projects');
+  var data=[{
+    project: 'Website',
+    type: 'software',
+    tools: [ 'Javascript', 'HTML', 'CSS', 'Node', 'EJS', 'ExpressJS' ],
+    deployment: { accessUrl: 'www.philanimbeje.co.za', hostPlatform: 'Heroku' },
+    projectUrl: 'https://github.com/philanimbeje/ServerProject',
+    description: 'Personal website using ExpressJS and EJS (embedded Javascript)',
+    imageUrl: 'https://www.teahub.io/photos/full/147-1473200_phone-wallpapers-tumblr-group-popular-cool-wallpaper-for.jpg',
+    symbol:'fa-user'
+  } ,{
+    project: 'Orange ToDo App',
+    type: 'software',
+    tools: [ 'HTML', 'CSS', 'EJS', 'ExpressJS', 'Javascript', 'Node' ],
+    deployment: {
+      accessUrl: 'https://orangetodoapp.herokuapp.com/',
+      hostPlatform: 'Heroku'
+    },
+    projectUrl: 'https://github.com/philanimbeje/simpleToDo',
+    description: 'A simple Todo application using browser localStorage for persistence',
+    imageUrl: 'https://www.teahub.io/photos/full/147-1473200_phone-wallpapers-tumblr-group-popular-cool-wallpaper-for.jpg',
+    symbol:'fa-clipboard-check'
+  }];
+  res.render('projects', {data});
 });
 
 app.get('/contact', function (req, res) {

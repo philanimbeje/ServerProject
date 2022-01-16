@@ -16,7 +16,8 @@
         },
         "projectUrl":"https://github.com/philanimbeje/ServerProject",
         "description":"Personal website using ExpressJS and EJS (embedded Javascript)",
-        "imageUrl":""
+        "imageUrl":"https://www.teahub.io/photos/full/147-1473200_phone-wallpapers-tumblr-group-popular-cool-wallpaper-for.jpg",
+        "symbol":"fa-clipboard-check"
     },
     {
         "project":"Orange ToDo App",
@@ -35,6 +36,7 @@
         },
         "projectUrl":"https://github.com/philanimbeje/simpleToDo",
         "description":"A simple Todo application using browser localStorage for persistence",
-        "imageUrl":""
+        "imageUrl":"https://www.teahub.io/photos/full/147-1473200_phone-wallpapers-tumblr-group-popular-cool-wallpaper-for.jpg",
+        "symbol":"fa-clipboard-check"
     }
 ]
