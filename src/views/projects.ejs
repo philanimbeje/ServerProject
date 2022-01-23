@@ -19,19 +19,34 @@
     <div class="options">
         <% if(data.length>0) {%>
             <% data.forEach(project => { %>
-        <div class="option"  style='--optionBackground:url(<%= project.imageUrl %>);'>
-            <div class="shadow">
-                 <div class="label">
-                     <div class="icon">
-                         <i class="fas <%= project.symbol %>"></i>
-                     </div>
-                     <div class="info">
-                         <div class="main"><%= project.project %></div>
-                         <div class="sub"><%= project.description %></div>
-                     </div>
-                 </div>
+                <div class="option"  style='--optionBackground:url(<%= project.imageUrl %>);'>
+                    <div class="shadow">
+                        <div class="label">
+                            <div class="icon">
+                                <i class="fas <%= project.symbol %>"></i>
+                            </div>
+                            <div class="info">
+                                <div class="main"><%= project.project %></div>
+                                <div class="sub"><%= project.description %></div>
+                            </div>
+                            <!-- <div>
+                                <% if(project?.deployment?.accessUrl && project?.deployment?.accessUrl !== "" ) {%>
+                                <p>See it on: <a href="<%= project.deployment.accessUrl %>"><%= project.deployment.hostPlatform %></a></p>
+                                <% } %>
+                                <p><a href="<%= project.projectUrl %>">Git Repository</a></p>
+                                <div class="skillStack">
+                                    <ul>
+                                   <% project.tools.forEach((tool) => { %>
+                                       <li><%= tool %></li>
+                                   <% }) %>
+                                   </ul>
+                               </div>
+                        </div> -->
+                        
+                    </div>
+                    
+                </div>
             </div>
-        </div>
         <% })}%>
     </div>
 </div>
