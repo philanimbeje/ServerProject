@@ -61,14 +61,18 @@
 }
 
 .option.active .label{
-    bottom: 20px;
-    left: 20px;
+    bottom: 100%;
+    left: 10px;
 }
 
 .option.active .info > div {
     left: 0px;
     opacity: 1;
 }
+    .option.active .icon {
+        left: 0px;
+        opacity: 1;
+    }
 
 .option:not(.active){
     flex-grow:1;
@@ -136,4 +140,9 @@
 }
 .sub {
     transition-delay: 0.1s;
+}
+.listNone {
+    all: initial;
+    color: white;
+    font-family: 'Roboto', sans-serif;
 }
